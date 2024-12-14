@@ -265,7 +265,7 @@ export function ColorThemeEditor({
               <Popover>
                 <PopoverTrigger>
                   <div
-                    className="h-5 w-12 rounded border border-black/20 dark:border-white/20"
+                    className="h-5 w-12 rounded-sm border border-black/20 dark:border-white/20"
                     style={{
                       backgroundColor: themeState.surfaceColor
                     }}
@@ -293,7 +293,7 @@ export function ColorThemeEditor({
               <Popover>
                 <PopoverTrigger>
                   <div
-                    className="h-5 w-12 rounded border border-black/20 dark:border-white/20"
+                    className="h-5 w-12 rounded-sm border border-black/20 dark:border-white/20"
                     style={{
                       backgroundColor: themeState.brandColor
                     }}
@@ -321,7 +321,7 @@ export function ColorThemeEditor({
               <Popover>
                 <PopoverTrigger>
                   <div
-                    className="h-5 w-12 rounded border border-black/20 dark:border-white/20"
+                    className="h-5 w-12 rounded-sm border border-black/20 dark:border-white/20"
                     style={{
                       backgroundColor: themeState.accentColor
                     }}
@@ -349,7 +349,7 @@ export function ColorThemeEditor({
               <Popover>
                 <PopoverTrigger>
                   <div
-                    className="h-5 w-12 rounded border border-black/20 dark:border-white/20"
+                    className="h-5 w-12 rounded-sm border border-black/20 dark:border-white/20"
                     style={{
                       backgroundColor: themeState.textColor
                     }}
@@ -377,7 +377,7 @@ export function ColorThemeEditor({
               <Popover>
                 <PopoverTrigger>
                   <div
-                    className="h-5 w-12 rounded border border-black/20 dark:border-white/20"
+                    className="h-5 w-12 rounded-sm border border-black/20 dark:border-white/20"
                     style={{
                       backgroundColor: themeState.mutedColor
                     }}
@@ -505,7 +505,7 @@ function ThemePreview({
     >
       <div className="flex flex-row items-center gap-4">
         {/* {menu?.organization?.logo && (
-          <Avatar className="h-16 w-16 rounded-xl shadow">
+          <Avatar className="h-16 w-16 rounded-xl shadow-sm">
             <AvatarImage
               src={menu?.organization?.logo}
               className="rounded-xl"

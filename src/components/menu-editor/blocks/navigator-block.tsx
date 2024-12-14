@@ -160,7 +160,7 @@ export default function NavigatorBlock({ color }: NavigatorBlockProps) {
             )}
           >
             {ids.map((id, index) => (
-              <li key={id} className="flex-shrink-0">
+              <li key={id} className="shrink-0">
                 <Link
                   href={`#${id}`}
                   className={cn(
@@ -181,7 +181,7 @@ export default function NavigatorBlock({ color }: NavigatorBlockProps) {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: 10 }}
                 transition={{ duration: 0.3 }}
-                className="pointer-events-none absolute right-0 top-0 flex h-full items-center"
+                className="pointer-events-none absolute top-0 right-0 flex h-full items-center"
               >
                 <ChevronsRight className="size-4" />
               </motion.div>

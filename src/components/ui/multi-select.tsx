@@ -31,7 +31,7 @@ import { cn } from "@/lib/utils"
  * Uses class-variance-authority (cva) to define different styles based on "variant" prop.
  */
 const multiSelectVariants = cva(
-  "m-0.5 py-0.5 transition ease-in-out delay-150 duration-150 rounded",
+  "m-0.5 py-0.5 transition ease-in-out delay-150 duration-150 rounded-sm",
   {
     variants: {
       variant: {
@@ -291,7 +291,7 @@ export const MultiSelect = React.forwardRef<
                 >
                   <div
                     className={cn(
-                      "mr-2 flex h-4 w-4 items-center justify-center rounded border",
+                      "mr-2 flex h-4 w-4 items-center justify-center rounded-sm border",
                       selectedValues.length === options.length
                         ? "border-orange-500 bg-orange-500 text-gray-50 dark:border-gray-50 dark:bg-gray-50 dark:text-gray-900"
                         : "dark:opacity-50 [&_svg]:invisible"
@@ -311,7 +311,7 @@ export const MultiSelect = React.forwardRef<
                     >
                       <div
                         className={cn(
-                          "mr-2 flex h-4 w-4 items-center justify-center rounded border",
+                          "mr-2 flex h-4 w-4 items-center justify-center rounded-sm border",
                           isSelected
                             ? "border-orange-500 bg-orange-500 text-gray-50 dark:border-gray-50 dark:bg-gray-50 dark:text-gray-900"
                             : "dark:opacity-50 [&_svg]:invisible"

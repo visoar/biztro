@@ -184,7 +184,7 @@ export default function ToolboxPanel({
               <Button
                 variant="outline"
                 size="xs"
-                className="mt-2 w-full border-blue-500 bg-transparent text-blue-500 hover:bg-blue-50 hover:text-blue-900 dark:border-blue-400 dark:bg-transparent dark:text-blue-400 dark:hover:bg-blue-900 dark:hover:bg-opacity-10"
+                className="dark:hover:bg-opacity-10 mt-2 w-full border-blue-500 bg-transparent text-blue-500 hover:bg-blue-50 hover:text-blue-900 dark:border-blue-400 dark:bg-transparent dark:text-blue-400 dark:hover:bg-blue-900"
               >
                 Ver productos
               </Button>
@@ -303,7 +303,7 @@ function ProOnlyWrapper({
       <div className="relative cursor-not-allowed opacity-50">
         {children}
         <Badge
-          className="absolute right-2 top-2 px-1 py-1 text-xs"
+          className="absolute top-2 right-2 px-1 py-1 text-xs"
           variant="yellow"
         >
           <Lock className="size-3" />
@@ -323,7 +323,7 @@ function ToolboxElement({
   classNameIcon?: string
 }) {
   return (
-    <div className="group flex cursor-move items-center gap-2 rounded-lg border-[0.5px] p-2 text-sm shadow-sm hover:border-lime-400 hover:ring-1 hover:ring-lime-100 dark:border-gray-700 dark:hover:border-green-600 dark:hover:ring-green-900">
+    <div className="group flex cursor-move items-center gap-2 rounded-lg border-[0.5px] p-2 text-sm shadow-xs hover:border-lime-400 hover:ring-1 hover:ring-lime-100 dark:border-gray-700 dark:hover:border-green-600 dark:hover:ring-green-900">
       <Icon
         className={cn(
           "size-3.5 text-blue-400 group-hover:text-current",

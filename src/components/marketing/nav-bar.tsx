@@ -17,7 +17,7 @@ export default function Navbar({ children }: { children?: React.ReactNode }) {
           <Button
             variant="outline"
             size="xs"
-            className="rounded-full px-3 shadow-sm"
+            className="rounded-full px-3 shadow-xs"
           >
             Iniciar sesión
           </Button>

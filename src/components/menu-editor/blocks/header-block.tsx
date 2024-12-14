@@ -60,7 +60,7 @@ export default function HeaderBlock({
           isBannerVisible={showBanner ?? false}
           className="relative"
         />
-        <div className="px-4 pb-8 pt-4">
+        <div className="px-4 pt-4 pb-8">
           {/* Logo and organization name */}
           <div
             className={cn(
@@ -116,7 +116,7 @@ export default function HeaderBlock({
   const renderModern = () => {
     return (
       <>
-        <div className="flex items-center justify-center pb-6 pt-8">
+        <div className="flex items-center justify-center pt-8 pb-6">
           <div className="absolute inset-0 origin-top">
             <Banner
               banner={organization.banner}
@@ -222,7 +222,7 @@ function Logo({
 }) {
   return (
     isLogoVisible && (
-      <Avatar className={cn("size-16 rounded-xl shadow", className)}>
+      <Avatar className={cn("size-16 rounded-xl shadow-sm", className)}>
         <AvatarImage src={logo ?? undefined} className="rounded-xl" />
         <AvatarFallback className="text-xl">
           {getInitials(orgName)}
@@ -319,7 +319,7 @@ function SocialMedia({
   if (!isVisible || !location) return null
 
   return (
-    <div className="absolute right-0 top-0 rounded-bl-lg backdrop-blur-sm has-[a]:bg-white/75">
+    <div className="absolute top-0 right-0 rounded-bl-lg backdrop-blur-xs has-[a]:bg-white/75">
       <div className="flex flex-row items-center gap-3 p-2">
         {location?.facebook && (
           <a
